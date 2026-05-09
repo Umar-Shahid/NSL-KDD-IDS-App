@@ -55,6 +55,21 @@ python app.py
 
 Then open `http://127.0.0.1:5000` in your browser.
 
+## Usage
+
+- Open the web UI at `http://127.0.0.1:5000` after starting the app.
+- Enter network traffic feature values in the form fields.
+- Click the prediction button to see:
+  - predicted attack category
+  - confidence score
+  - detailed risk description
+- Use the sample routes to quickly load example traffic types:
+  - `http://127.0.0.1:5000/sample/normal`
+  - `http://127.0.0.1:5000/sample/dos`
+  - `http://127.0.0.1:5000/sample/probe`
+  - `http://127.0.0.1:5000/sample/r2l`
+  - `http://127.0.0.1:5000/sample/u2r`
+
 ## Deployment
 
 This project is ready for deployment on platforms like Railway. The existing `Procfile` indicates the Flask app should start with:
